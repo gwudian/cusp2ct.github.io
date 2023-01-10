@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>The Ohio State University</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <style>
+    .menu-about-us {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-container"></div>
+  <div class="content-container">
+    <div class="content">
+      <div class="content-table flex-column">
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+			<h2>The Ohio State University - Accrual Enhancement Protocol (AEP) - PNs</h2>
+			<p class="text">
+              Our site in Ohio State University will increase referral and accrual of racial/ethnic minorities to NCI's National Clinical Trials Network (NCTN) prevention/control and treatment trials at OSUCCC-James and across the state.
+			</p>
+			
+			<h3>Our goals include:</h3>			
+			  
+				<p class="text">
+				(1)Conduct a baseline assessment of referral patterns and accrual of racial and ethnic minorities to clinical trials (Phase 1)</p>
+				<p class="text">
+				(2)Implement a bi-prong multi-level intervention focused in 9 counties in the OSUCCC catchment area that directly intervenes on problems identified at each level (Phase 2)</p>
+				<p class="text">
+				(3)Evaluate the impact of the intervention on referral (primary outcome) and accrual patterns (secondary outcomes) in Phase 3 to clinical trials.</p>
+			
+			<p class="text"></p>
+			<h2>Principal Investigators</h2>
+			<hr>
+            <h3>Dr. Electra D. Paskett</h3>
+            <p class="text">
+			<img class="image image-wrap-text-2" src="img/paskett.jpg">
+			<a href="https://cancer.osu.edu/find-a-researcher/search-researcher-directory/electra-d-paskett" target="_blank">Electra D. Paskett, Ph.D.,</a> became the Marion N. Rowley Professor of Cancer Research at The Ohio State University in 2002. 
+			She is the Director of the Division of Cancer Prevention and Control in the College of Medicine, a professor in the Division of Epidemiology in the College of Public Health and the Associate Director for Population Sciences and Program Leader of the Cancer Control Program in the Comprehensive Cancer Center of the Ohio State University (OSU).  
+			She is also Director of the Center for Cancer Health Equity at the James Cancer Hospital.  Dr. Paskett's research program is nationally recognized for studying cancer health disparities. 
+			The program has four major areas of focus and has evolved to utilize a "team science approach" to understanding and intervening in these problems: energy balance and cancer prevention; promoting the use of early-detection exams; improving access to diagnostic and treatment services; and lymphedema prevention.
+
+
+            </p>
+			
+			<hr>
+			<h3>Dr. Cheryl Lee</h3>
+            <p class="text">
+			<img class="image image-wrap-text-2" src="img/lee.jpg">
+			<a href="https://wexnermedical.osu.edu/about-us/our-people/cheryl-lee" target="_blank">Cheryl Lee, MD</a> was named chief health equity officer for the Ohio State Wexner Medical Center on an interim basis in July 2021. She is also responsible for and serves as interim director for the Center for Health Equity as part of the university's RAISE initiative. Additionally, Dr. Lee is chair of the Department of Urology, the Dorothy M. Davis Endowed Chair in Cancer Research and vice president of the OSU Physicians Inc. and Faculty Group Practice. As chief health equity officer, Dr. Lee engages and collaborates with faculty, staff and learners across the medical center, the seven health science colleges and the broader university - as well as with community organizations, nonprofit organizations, government and other external stakeholders - to reduce or eliminate disparities in health and the determinants that adversely impact marginalized groups in the communities the Wexner Medical Center serves, with the goal of fostering more equitable care and health outcomes.
+			Dr. Lee was recruited to The Ohio State University in 2016 to lead the Department of Urology from the University of Michigan, where she'd been a faculty member for 16 years, rising in ranks to Professor with Tenure, and was the inaugural Dr. Robert H. and Eva M. Moyad Research Professor.
+			Active in the education of students, residents and practicing urologists, Dr. Lee has directed or been a faculty member of a postgraduate course at the annual meeting of the American Urologic Association for more than a decade and has been a leader in its educational service through her roles on its Education Council and the American Urologic Association Update Editorial Board. She has played a key role in the board certification of urologists in America through her service on the American Board of Urology/American Urologic Association Examination Committee, the American Board of Urology Oral Board Examination Committee and the Oncology Knowledge Assessment Test Committee of the Society of Urologic Oncology.
+            </p>
+			
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-10682694-20', 'auto');
+  ga('send', 'pageview');
+
+  function setDownloadUrl() {
+    var root_url = "http://api.smellpittsburgh.org/";
+    var api_url = "api/v1/smell_reports?timezone_offset=" + (new Date().getTimezoneOffset()) + "&start_time=1475121600&allegheny_county_only=true&format=csv";
+    $("#download-button").attr("href", root_url + api_url);
+  }
+
+  $(setDownloadUrl)
+</script>
+
+</html>

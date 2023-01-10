@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>The University of Florida and The University of Miami</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <style>
+    .menu-about-us {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-container"></div>
+  <div class="content-container">
+    <div class="content">
+      <div class="content-table flex-column">
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+			<h2>Univ. Florida and Univ. Miami - ALEX (Agent Leveraging Empathy for eXams) - vCHEs</h2>
+			<p class="text">
+              Our site in The University of Florida and The University of Miami will increase referral to cancer clinical trials (CCTs) among minority patients across the Florida by adapting and evaluating the ALEX Portal: a novel patient decision and navigation aid using Virtual Human Technology. 
+			</p>
+			
+			<h3>Our goals include:</h3>			
+			  
+			<p class="text">
+			(1)Assess clinician, CHE, and self-referrals to existing CCTs in Florida</p>
+			<p class="text">
+			(2)Develop the ALEX Portal: a scalable vCHE intervention for navigating racial and ethnic minority patients to recurring CCTs at participating Florida cancer centers</p>
+			<p class="text">
+			(3)Launch the ALEX Portal via OneFlorida+ to evaluate sustainability</p>
+			
+			<p class="text"></p>
+			<h2>Principal Investigators</h2>
+			<hr>
+            <h3>Dr. Janice Krieger</h3>
+            <p class="text">
+			<img class="image image-wrap-text-2" src="img/krieger.jpg">
+			<a href="https://www.jou.ufl.edu/staff/janice-krieger/" target="_blank">Dr. Krieger </a> is a health communication scientist focused on identifying innovative ways to empower patients and their families in healthcare decision-making as well as reduce barriers that contribute to inequities in cancer prevention and survivorship. Currently, her research focuses on developing interventions utilizing virtual clinicians to improve health-related outcomes for underrepresented populations, particularly rural patients. She has 20 years of experience developing and implementing mHealth interventions that utilize precision messaging techniques to reduce health inequities. She has secured over 10 million in research funding, including serving as PI of a large, randomized clinical trial to reduce colorectal cancer screening inequities (1R01CA207689).
+			Dr. Krieger is a Professor of Advertising and Health Outcomes & Biomedical Informatics and serve as co-leader of the University of Florida Health Cancer Center (UFHCC) Cancer Population Sciences research program and well as founding director of the STEM (Science, Technology, Engineering, and Medicine) Translational Communication Center. She also co-directs the UF Recruitment Center housed within the Clinical and Translational Sciences Institute. Her interdisciplinary work is published in a variety of well-regarded and high impact journals, including the Journal of the National Cancer Institute. She is also an Associate Editor for the Journal of Communication, the flagship international journal in her field.
+            </p>
+			<hr>
+			<h3>Dr. Olveen Carrasquillo</h3>
+            <p class="text">
+			<img class="image image-wrap-text-2" src="img/carrasquillo.jpg">
+			<a href="https://med.miami.edu/faculty/olveen-carrasquillo-md-mph" target="_blank">Dr. Olveen Carrasquillo</a> is a Professor of Medicine and Public Health Sciences and Associate Dean for Clinical and Translational Research at the University of Miami's Miller School of Medicine. He is a Puerto Rican born physician who was raised in the Bronx. He graduated summa cum laude from the Sophie Davis School of Bio-Medical Education at City College, and obtained his MD degree from the New York University School of Medicine. He completed a three-year internal medicine residency at Columbia-Presbyterian Medical Center, Harvard's two-year General Medicine Fellowship and an MPH from the Harvard School of Public Health. For eight years, he was Director of the Center of Excellence in Health Disparities Research at Columbia University.
+			For thirteen years he served as Chief of the Division of General Internal Medicine at the University of Miami where he led a clinical, teaching and research enterprise of 51 full time faculty. Dr. Carrasquillo now serves as co-Director of the University's Clinical and Translational Science Institute whose mission is to drive research translation into evidence-based clinical and community practices to improve the health of South Florida's diverse population. He is a national expert in minority health, health disparities, community based participatory research, access to care and community health worker interventions. He has over twenty years of experience leading large NIH Center grants and randomized trials, totaling over $60 million in funding. His work includes research in diabetes, cardio-vascular disease, HIV, cancer and most recently in precision medicine. 
+			His research has been published in many of the nation's top medical journals and he servers on numerous NIH grant review committees. He is also active in various national organizations, including numerous current and past leadership roles in the Society of General Internal Medicine, Physicians for a National Health Program, National Hispanic Medical Association and Latinos for Health Equity. 
+            </p>
+			
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-10682694-20', 'auto');
+  ga('send', 'pageview');
+
+  function setDownloadUrl() {
+    var root_url = "http://api.smellpittsburgh.org/";
+    var api_url = "api/v1/smell_reports?timezone_offset=" + (new Date().getTimezoneOffset()) + "&start_time=1475121600&allegheny_county_only=true&format=csv";
+    $("#download-button").attr("href", root_url + api_url);
+  }
+
+  $(setDownloadUrl)
+</script>
+
+</html>

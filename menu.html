@@ -1,0 +1,61 @@
+<style>
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #234C5A;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+
+
+<div class="menu">
+  <div class="menu-table flex-row-space-between">
+    <div class="logo flex-row-center">
+      <a href="index.html"><span class="logo-font-1">CUSP</span><span class="logo-font-2">2</span><span class="logo-font-1">CT</span></a>
+    </div>
+    <a class="menu-button" tabindex="0" href="javascript:void(0)">
+      <img src="img/menu.png">
+    </a>
+    <div class="menu-items flex-row-center flex-item">
+      <a href="index.html" class="menu-index">Overview</a>
+	  <a1 class="dropdown" class="menu-index" style="
+	  color: rgba(255, 255, 255, 0.8);
+	  text-decoration: none;
+	  font-weight: 400;
+	  font-size: 18px;
+	  flex: 1 auto;
+	  transition: opacity 0.1s ease-in-out;
+	  -moz-transition: opacity 0.1s ease-in-out;
+	  -webkit-transition: opacity 0.1s ease-in-out;
+	  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	  white-space: nowrap;
+	  margin-right: 25px;
+	  ">Our Teams
+		  <div class="dropdown-content">
+			<p><a href="team1.html">Mayo Clinic - DECC</a></p>
+			<p><a href="team2.html">Moffitt Cancer Center</a></p>
+			<p><a href="team3.html">The Ohio State University</a></p>
+			<p><a href="team4.html">ECOG-ACRIN Cancer Research Group</a></p>
+			<p><a href="team5.html">The University of Florida and The University of Miami</a></p>
+		  </div>
+	  </a1>
+      <a href="resources.html" class="menu-how-it-works">Resources</a>
+      <a href="presentations.html" class="menu-data">Presentations</a>
+      <a href="publications.html" class="menu-visualization">Publications</a>
+      <a href="media.html" class="menu-media">Media</a>
+    </div>
+  </div>
+</div>
+
