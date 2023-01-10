@@ -21,6 +21,29 @@
   </style>
 </head>
 
+<script type="text/javascript">
+function password() {
+var testV = 1;
+var pass1 = prompt('Please input the test site access code','');
+while (testV < 3) {
+if (!pass1)
+history.go(-1);
+if (pass1 == "cusp2cttest") {//original passcode 123
+alert('access granted!');
+break;
+}
+testV+=1;
+var pass1 =
+prompt('Please input the correct access code:');
+}
+if (pass1!="password" & testV ==3)
+history.go(-1);
+return " ";
+}
+document.write(password());
+</script>
+	
+
 <body>
   <div class="menu-container"></div>
   <div class="content-container">
